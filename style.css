@@ -1,0 +1,55 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+header{
+    height:100px;
+    width:100%;
+    background-image:linear-gradient(to right, rgb(148, 95, 95),rgb(228, 40, 40) ) ;
+}
+#log{
+    height: 100%;
+    width:30%;
+    float:right;
+    background-color:whitesmoke ;
+    line-height: 100px;
+    padding: 0 10px;
+}
+#b{float: left;}
+#im {width: 100px;
+height:100%;
+border-radius: 50%;}
+nav {width:70%;text-align: center;}
+nav a{text-decoration:none;color: white;font-weight: bold;display: inline-block;}
+nav li{display: inline-block;;width: 100px;text-align: center;line-height: 100px;}
+nav a:hover{background-color: white;width:100px;color:black;height: 100px;}
+
+main{width: 100%;height: 450px;background-color: blueviolet;}
+aside{width: 30%;height:100%;float: left;}
+aside img{width: 100%;height:200px;}
+aside h1{font-variant: small-caps;text-align: center;color:black;height:30px;border-bottom:3px solid red ;background-color: rgb(221, 194, 194);}
+.co{width: 70%;height:100%;background-color: rgb(210, 224, 224);float: right;text-align: center;line-height:50px;}
+.co div{width:300px;height:150px;background-color: rgb(240, 99, 99);border:5px solid rgba(90, 5, 5, 0.212) ;border-top-left-radius:25px ;border-top-right-radius: 25px;
+      margin:15% 40%;}
+@media only screen and (max-width :1161px) and (min-width:800px) {
+  #log{
+      width:40%;
+    }
+  nav{
+      width:60%;
+    }
+   aside,.co{width:50%;}
+  .co div{margin: 15% 10%;}
+}
+@media only screen and (max-width:799px){
+  #log{
+    width:100%;text-align: center;height: auto;
+  }
+  nav{width: 100%;float: none;}
+  header{height: auto;}
+  #b{float: none;}
+  aside,.co{width: 100%;}
+  .co div{margin: 15% 20%;}
+  main{height: auto;}
+ 
+}
